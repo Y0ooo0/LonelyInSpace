@@ -4,14 +4,15 @@
             <link rel="stylesheet" href="Style/style.css">
             <title>Outer Space</title>
         </head>
-        <body onload="createRandomStars(40, 2.5)">     
+        <body onload="createRandomStars(200)">     
             <div id="stars">
                 <canvas id="starField" width=300 height=300></canvas>
             </div>
-            <a href="/home/y0ooo0/Documents/Programming Stuff/Lonely In Space/space.html">
-                <img id="astronaut" src="Images/astronaut.png" onload="float()">  
-            </a> 
-            <img class="space" src="Images/muralNoStars.png">       
+            <img id="astronaut" src="Images/astronaut.png" onload="float()" onclick="changeWindow()">  
+            <div id="shittyPoems"></div>
+            <img id="space" src="Images/muralNoStars.png">     
+            
+            <script src="Scripts/stories.js"></script>
             <script src="Scripts/float.js"></script>
             <script src="Scripts/stars.js"></script>
         </body>
